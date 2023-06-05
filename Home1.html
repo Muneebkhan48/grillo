@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="Assets/img1/favicon2.ico"/>
+  <!-- bootstrap cdn -->
+  <!-- Css -->
+  
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <!-- Add the new slick-theme.css if you want the default styling -->
+  
+  <link rel="stylesheet" type="text/css" href="Assets/css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="Assets/css/slick-theme.css" />
+  
+	<link href="Assets/css/style1.css" rel="stylesheet">
+	<link href="Assets/css/responsive.css" rel="stylesheet">
+	<link href="Assets/css/grillo-popup.min.css" rel="stylesheet">
+  <link href="Assets/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="Assets/css/style.css" />
+  
+  
+  <title>Grillo</title>
+</head>
+
+<body onload="myFunction">
+  <!-- ------preloader----- -->
+  <div id="loader-wraper">
+    <div id="loader">
+      <div class="d-flex justify-content-center align-self-center">
+        <div class="spinner-border text-danger p-2" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+  </div>
+  </div>
+  <!-- --------- navigation ---------- -->
+  <section id="navbar-wraper">
+    <div class="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-md-6 col-sm-6 d-flex alignment display">
+            <div class="location">
+              <a href="#">
+                <i class="fa fa-location-dot"></i>
+              </a>
+              &nbsp;
+              <p>732/21 second street. king Street, United Kingdom</p>
+            </div>
+            <div class="telephone mx-4">
+              <a href="#">
+                <i class="fa fa-phone"></i>
+              </a>
+              &nbsp;
+              <p>+923461919917</p>
+            </div>
+          </div>
+          <!-- <div class="col-lg-1 col-md-1"></div> -->
+          <div class="col-lg-5 col-md-6 col-sm-6 d-flex justify-content-center alignment  ">
+            <div class="links  ">
+              <ul class="socialicon">
+                <li class="icon pe-2">
+                  <a href="#" class="ico-facebook"><i class="fab fa-facebook-f iconz"></i></a>
+                </li>
+                <li class="icon pe-2">
+                  <a href="#" class="ico-twitter"><i class="fab fa-twitter iconz"></i></a>
+                </li>
+                <li class="icon pe-2">
+                  <a href="#" class="ico-instagram"><i class="fab fa-instagram iconz"></i></a>
+                </li>
+                <li class="icon pe-2">
+                  <a href="#" class="ico-youtube"><i class="fab fa-youtube iconz"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="search ">
+              <a href="#" onclick="search" id="srch" data-bs-toggle="modal" data-bs-target="#exampleModal1"><i class="fa-solid fa-magnifying-glass pr-1"></i> &nbsp; Search</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog1">
+    <div class="modal-content modal-content1">
+      <div class="modal-body modal-body1 ">
+        <button type="button" class="btn-close btn-close1" data-bs-dismiss="modal" aria-label="Close"></button>
+        <input type="text" id="grow" >
+      </div>
+      
+    </div>
+  </div>
+</div>
+    <div id="menubar" class="sticky-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="Assets/img1/logo/logo.png" class="img-fluid" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars icon1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="Home1.html">HOME.</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    PAGES.
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="Home1.html">HOME 1</a></li>
+                    <li>
+                      <a class="dropdown-item" href="Home2.html">HOME 2</a>
+                    </li>
+                    
+                    <li>
+                      <a class="dropdown-item" href="Home3.html">HOME 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="About us.html">About Us.</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Contact us.html">Contact Us.</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Gallries.
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="Gallrey1.html">Gallrey 1</a></li>
+                    <li>
+                      <a class="dropdown-item" href="Gallrey2.html">Gallrey 2</a>
+                    </li>
+                    
+                    <li>
+                      <a class="dropdown-item" href="Gallrey3.html">Gallrey 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="Single_blog.html">BLOG.</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="single-recipice.html">SHOP.</a>
+                </li>
+              </ul>
+              <div class="d-flex">
+                <a href="Reservation.html" class="btn btn-lg btn1 ">RESERVATION</a>
+                <a href="" class=""><i class="fa fa-cart-shopping icon2"><span class="position-absolute translate-middle badge rounded-pill bg-danger">
+                  2
+                </span></i>
+                </a>
+                
+                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-bars icon3"></i></a>
+                
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          
+              <div class="popup-bg p-5">
+                  <div class="container">
+                      <div class="center">
+                      <span class="span-head">Discover</span>
+                      <h2>ODDER YOUR DEAL</h2>
+                  </div>
+                      <div class="row">
+                          <div class="col-lg-5 col-md-5">
+                              <img src="Assets/img1/popup/269 × 268 px.webp" class="img-fluid" alt="">
+                          </div>
+                          <div class="col-lg-7 col-md-7">
+                              <p>34 mintes plan</p>
+                              <h5><b>EVERY COOKING TIME A SPECIAL DAY</b> </h5>
+                              <h6><b>Price $80</b></h6>
+                              <p class="py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, qui! Molestias, adipisci eum? Odio accusantium nisi vero quos porro dolor quis perspiciatis nulla ut quaerat, ea dignissimos, doloremque officia odit?</p>
+                              
+                          </div>
+                      </div>
+                      <div class="row">
+                          <h2>CALL FOR ODDER</h2>
+                          <div class="d-flex">
+                              <i class="fa fa-brands fa-whatsapp  "></i>
+                              <p class="align-self-center">+923410450040</p>
+                          </div>
+                          <div class="d-flex py-3">
+                              <i class="fa fa-solid fa-phone"></i>
+                              <p class="align-self-center">+923410450040</p>
+                          </div>
+                          <div class="d-flex">
+                              <i class="fa fa-brands fa-skype"></i>
+                              <p class="align-self-center">+923410450040</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------ slider ------------- -->
+
+  <section id="slider-wraper">
+    <div class="slider-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-10">
+            <div class="slider1">
+              <div class="center">
+                <img src="Assets/img/slider/slider.png" alt="">
+                <h2 class="p-3 text-white">
+                  Conceived,Build and Run by Lovers<br> Purveyors of Food
+                </h2>
+                <a href="">READ MORE</a>
+              </div>
+              <div class="center">
+                <img src="Assets/img/slider/slider.png" alt="">
+                <h2 class="p-3 text-white">
+                  Conceived,Build and Run by Lovers<br> Purveyors of Food
+                </h2>
+                <a href="">READ MORE</a>
+              </div>
+              <div class="center">
+                <img src="Assets/img/slider/slider.png" alt="">
+                <h2 class="p-3 text-white">
+                  Conceived,Build and Run by Lovers<br> Purveyors of Food
+                </h2>
+                <a href="">READ MORE</a>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-1"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- -------------Latest Respices ------------ -->
+
+  <section id="Latest-Respices">
+    <div class="latest-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 py-5">
+            <img src="Assets/img1/home/about.webp" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 col-md-6 py-5">
+            <div class="pad">
+              <span class="span1">Our Latest Respices</span>
+              <h2>KNOW ABOUT MY STORY</h2>
+              <p class="py-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius unde, dicta distinctio excepturi
+                placeat nulla. Sed asperiores magnam quos? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati exercitationem, culpa labore quia eaque facere error eum. Iusto, ut beatae.
+              </p>
+            </div>
+            <div class="slider2">
+              <div class="">
+                <img src="Assets/img1/home/Avator1.webp" class="img-fluid rounded" alt="...">
+              </div>
+              <div class="">
+                <img src="Assets/img1/home/Avator2.webp" class="img-fluid rounded" alt="...">
+              </div>
+              <div class="">
+                <img src="Assets/img1/home/Avator3.webp" class="img-fluid rounded" alt="...">
+              </div>
+              <div class="">
+                <img src="Assets/img1/home/Avator4.webp" class="img-fluid rounded" alt="...">
+              </div>
+              <div class="">
+                <img src="Assets/img1/home/Avator5.webp" class="img-fluid rounded" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- -------Popular Dishes--------- -->
+
+  <section id="popular-dishes">
+    <div class="popular-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-lg-6">
+            <div class="pad center">
+              <span>Discover</span>
+              <h2>POPULAR DISHES</h2>
+              <p class="py-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius unde, dicta distinctio excepturi
+                placeat nulla. Sed asperiores magnam quos? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati exercitationem, culpa labore quia eaque facere error eum. Iusto, ut beatae. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Officiis ipsam non explicabo minus magni esse voluptates placeat
+                consectetur aspernatur dignissimos.
+              </p>
+              <a href="#" class="btn btn-outline-danger"> About us</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-lg-6">
+            <div class="popular-menu">
+              <div class="1">
+                <img src="Assets/img1/home/Rectangle 1.webp" class="img-fluid" alt="">
+              </div>
+              <div class="2">
+                <img src="Assets/img1/home/Rectangle 2.webp" class="img-fluid" alt="">
+              </div>
+              <div class="3">
+                <img src="Assets/img1/home/Rectangle 3.webp" class="img-fluid" alt="">
+              </div>
+              <div class="4">
+                <img src="Assets/img1/home/Rectangle 4.webp" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------Today deals----------- -->
+
+  <section id="deals">
+    <div class="deals-bg">
+      <div class="container">
+        <div class="row">
+          <div class="box">
+            <div class="col-lg-4 col-md-4 ">
+              <span class="span1">Today Deals</span>
+              <h2>BREAK FAST</h2>
+              &nbsp;
+              <h6>OATMEAL COOKIE</h6>
+              <p>Lorem ipsum dolor sit .......... <span class="span2"><b>$21.00</b></span></p>
+              &nbsp;
+              <h6>OATMEAL COOKIE</h6>
+              <p>Lorem ipsum dolor sit .......... <span class="span2"><b>$21.00</b></span></p>
+              &nbsp;
+              <h6>OATMEAL COOKIE</h6>
+              <p>Lorem ipsum dolor sit .......... <span class="span2"><b>$21.00</b></span></p>
+              &nbsp;
+              <h6>OATMEAL COOKIE</h6>
+              <p>Lorem ipsum dolor sit .......... <span class="span2"><b>$21.00</b></span></p>
+            </div>
+            <div class="col-lg-4 col-md-4 ">
+              <span class="span1">Today Deals</span>
+              <h2>BREAK FAST</h2>
+              &nbsp;
+              <h6>OATMEAL COOKIE</h6>
+              <p>Lorem ipsum dolor sit .......... <span class="span2"><b>$21.00</b></span></p>
+              &nbsp;
+              <h6>OATMEAL COOKIE</h6>
+              <p>Lorem ipsum dolor sit .......... <span class="span2"><b>$21.00</b></span></p>
+              &nbsp;
+              <h6>OATMEAL COOKIE</h6>
+              <p>Lorem ipsum dolor sit .......... <span class="span2"><b>$21.00</b></span></p>
+              &nbsp;
+              <h6>OATMEAL COOKIE</h6>
+              <p>Lorem ipsum dolor sit .......... <span class="span2"><b>$21.00</b></span></p>
+            </div>
+            <div class="col-lg-4 col-md-4 ">
+              <span class="span1">Today Deals</span>
+              <h2>BREAK FAST</h2>
+              &nbsp;
+              <h6>OATMEAL COOKIE</h6>
+              <p>Lorem ipsum dolor sit .......... <span class="span2"><b>$21.00</b></span></p>
+              &nbsp;
+              <h6>OATMEAL COOKIE</h6>
+              <p>Lorem ipsum dolor sit .......... <span class="span2"><b>$21.00</b></span></p>
+              &nbsp;
+              <h6>OATMEAL COOKIE</h6>
+              <p>Lorem ipsum dolor sit .......... <span class="span2"><b>$21.00</b></span></p>
+              &nbsp;
+              <h6>OATMEAL COOKIE</h6>
+              <p>Lorem ipsum dolor sit .......... <span class="span2"><b>$21.00</b></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------Odder Blog---------- -->
+
+  <section id="odder">
+    <div class="odder-bg">
+      <div class="container">
+        <div class="center">
+          <span class="span-head">Odder</span>
+          <h2>FROM THE BLOG</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 text-center">
+            <img src="Assets/img1/home/blog 1s.webp" class="img-fluid" alt="">
+            <div class="shrink">
+              <div class="box">
+                <div class="date">
+                  <p class="p1">7 December 2015</p>
+                </div>
+                <div class="links  ">
+                  <ul class="socialicon">
+                    <li class="icon px-2">
+                      <a href="#" class="ico-facebook"><i class="fab fa-facebook-f iconz"></i></a>
+                    </li>
+                    <li class="icon px-2">
+                      <a href="#" class="ico-twitter"><i class="fab fa-twitter iconz"></i></a>
+                    </li>
+                    <li class="icon px-2">
+                      <a href="#" class="ico-instagram"><i class="fab fa-instagram iconz"></i></a>
+                    </li>
+                    <li class="icon px-2">
+                      <a href="#" class="ico-youtube"><i class="fab fa-youtube iconz"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <h6 class="text-left">Daily Special Foods That </h6>
+              <p class="p2 left-left ">Lonina is a restaurant, bar and coffee roastery located on a busy corner site in</p>
+
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6  text-center">
+            <img src="Assets/img1/home/blog 2s.webp" class="img-fluid" alt="">
+            <div class="box">
+              <div class="date">
+                <p class="p1">7 December 2015</p>
+              </div>
+              <div class="links  ">
+                <ul class="socialicon">
+                  <li class="icon px-2">
+                    <a href="#" class="ico-facebook"><i class="fab fa-facebook-f iconz"></i></a>
+                  </li>
+                  <li class="icon px-2">
+                    <a href="#" class="ico-twitter"><i class="fab fa-twitter iconz"></i></a>
+                  </li>
+                  <li class="icon px-2">
+                    <a href="#" class="ico-instagram"><i class="fab fa-instagram iconz"></i></a>
+                  </li>
+                  <li class="icon px-2">
+                    <a href="#" class="ico-youtube"><i class="fab fa-youtube iconz"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h6 class="text-left">Daily Special Foods That </h6>
+            <p class="p2 text-left">Lonina is a restaurant, bar and coffee roastery located on a busy corner site in</p>
+          </div>
+          <div class="col-lg-4 col-md-6  text-center">
+            <img src="Assets/img1/home/blog 3s.webp" class="img-fluid" alt="">
+            <div class="box">
+              <div class="date">
+                <p class="p1">7 December 2015</p>
+              </div>
+              <div class="links  ">
+                <ul class="socialicon">
+                  <li class="icon px-2">
+                    <a href="#" class="ico-facebook"><i class="fab fa-facebook-f iconz"></i></a>
+                  </li>
+                  <li class="icon px-2">
+                    <a href="#" class="ico-twitter"><i class="fab fa-twitter iconz"></i></a>
+                  </li>
+                  <li class="icon px-2">
+                    <a href="#" class="ico-instagram"><i class="fab fa-instagram iconz"></i></a>
+                  </li>
+                  <li class="icon px-2">
+                    <a href="#" class="ico-youtube"><i class="fab fa-youtube iconz"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h6  class="text-left">Daily Special Foods That </h6>
+            <p class="p2 text-left">Lonina is a restaurant, bar and coffee roastery located on a busy corner site in</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- Discover ------------ -->
+
+  <section id="discover">
+    <div class="discover-bg">
+      <div class=" ">
+      <div class="row">
+        <div class="col-lg-5 col-md-5">
+          <div class="img">
+            <img src="Assets/img1/home/Discover.webp" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-7 bg">
+          <dinv class="disc">
+            <div class="discover-data center align-self-center">
+              <span class="span-head">Discover</span>
+              <h2>ALEX LEONARDI</h2>
+              <span class="span">CHEF, CO-FOUNDER</span>
+              <p class="py-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius unde, dicta distinctio excepturi
+                placeat nulla. Sed asperiores magnam quos? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Obcaecati exercitationem, culpa labore quia eaque facere error eum. Iusto, ut beatae. 
+              </p>
+
+            </div>
+            <div class="discover-folio">
+              <div class="rounded-imgs">
+                <div class="img1">
+                  <img src="Assets/img1/home/Avator1.webp" class="img-fluid round" alt="">
+                </div>
+                <div class="img1">
+                  <img src="Assets/img1/home/Avator2.webp" class="img-fluid round" alt="">
+                </div>
+                  <div class="img1">
+                  <img src="Assets/img1/home/Avator3.webp" class="img-fluid round" alt="">
+                </div>
+              </div>
+            </div>
+            </dinv>
+        </div>
+        
+    </div>
+
+
+  </section>
+
+
+<!-- --------- Today Special -----------  -->
+
+
+<section id="today">
+  <div class="today-bg">
+    <div class="container">
+      <div class="center">
+        <span class="span-head">Today</span>
+        <h2>SPECIALS</h2>
+        </div>
+      <div class="row pt-5">    
+      <div class="col-6 col-lg-3 col-md-4 col-sm-6 pad">
+        <div class="item-media">
+          <img src="Assets/img1/home/today Specials 1.webp" class="img-fluid img-hover" alt="">
+          <div class="media-links">            
+              <a href="#" class="btn"> Order Now</a>            
+          </div>
+        </div>
+        <h6 class="pt-4">Daily Special Foods That </h6>
+        <span class="span-price"><b>$22.00</b></span>
+        <div class="selection my-2">
+          <a href="#" class="variant">Crack</a>
+          <a href="#" class="variant">Graphes</a>
+          <a href="#" class="variant">Honey</a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 col-md-4 col-sm-6 pad">
+        <div class="item-media">
+          <img src="Assets/img1/home/today Specials 2.webp" class="img-fluid img-hover" alt="">
+          <div class="media-links">            
+              <a href="#" class="btn"> Order Now</a>            
+          </div>
+          </div>
+        <h6 class="pt-4">Daily Special Foods That </h6>
+        <span class="span-price"><b>$22.00</b></span>
+        <div class="selection my-2">
+          <a href="#" class="variant">Crack</a>
+          <a href="#" class="variant">Graphes</a>
+          <a href="#" class="variant">Honey</a>
+        </div>
+      </div>
+      <div class=" col-6 col-lg-3 col-md-4 col-sm-6 pad">
+        <div class="item-media">
+          <img src="Assets/img1/home/today Specials 3.webp" class="img-fluid img-hover" alt="">
+          <div class="media-links">            
+              <a href="#" class="btn"> Order Now</a>            
+          </div>
+          </div>
+        <h6 class="pt-4">Daily Special Foods That </h6>
+        <span class="span-price"><b>$22.00</b></span>
+        <div class="selection my-2">
+          <a href="#" class="variant">Crack</a>
+          <a href="#" class="variant">Graphes</a>
+          <a href="#" class="variant">Honey</a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-3 col-md-4 col-sm-6 pad">
+        <div class="item-media">
+          <img src="Assets/img1/home/today Specials 4.webp" class="img-fluid img-hover" alt="">
+          <div class="media-links">            
+              <a href="#" class="btn"> Order Now</a>            
+          </div>
+          </div>
+        <h6 class="pt-4">Daily Special Foods That </h6>
+        <span class="span-price"><b>$22.00</b></span>
+        <div class="selection my-2">
+          <a href="#" class="variant">Crack</a>
+          <a href="#" class="variant">Graphes</a>
+          <a href="#" class="variant">Honey</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- ---------latest morning deals----------  -->
+
+<section id="morning-deals">
+  <div id="Portfolio" class="container-fluid p-0">
+    <div class="center">
+    <span class="span-head">Today Deals</span>
+              <h2>BREAK FAST</h2>
+            </div>
+            <div class="tabs pb-3">
+              <ul class="nav nav-pills justify-content-center" id="filter_buttons">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="portfilter"  data-target="all" >ALL</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="portfilter" data-target="FAST" >FAST FOOD</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="portfilter" data-target="MIGHTNIGHT" >MIGHTNIGHT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " data-toggle="portfilter" data-target="SUNDAY" >SUNDAY DEALS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " data-toggle="portfilter" data-target="CHICKEN" >CHICKEN</a>
+                </li>
+              </ul>
+            </div>
+    <div class="row no-gutters magnific-gallery">
+        <div class="col-lg-3 col-md-4 col-sm-6  " data-tag="FAST">
+          <div class="portfolio-box" >
+            <img src="Assets/img/morning-dealss/img-04.jpg"  class="img-fluid img-hover"  alt="">
+            <div class="portfolio-box-caption"> 
+                        
+                <a  > <i href="Assets/img/morning-dealss/img-04.jpg" class="fa fa-search"></i> </a>            
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  " data-tag="MIGHTNIGHT">
+          <div class="portfolio-box">
+            <img src="Assets/img/morning-dealss/img-05.jpg" class="img-fluid img-hover"  alt="">
+            <div class="portfolio-box-caption"> 
+                      
+                <a  > <i href="Assets/img/morning-dealss/img-05.jpg" class="fa fa-search"></i> </a>            
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  " data-tag="SUNDAY">
+          <div class="portfolio-box">
+            <img src="Assets/img/morning-dealss/img-06.jpg" class="img-fluid img-hover" alt="">
+            <div class="portfolio-box-caption"> 
+                        
+                <a  > <i href="Assets/img/morning-dealss/img-06.jpg" class="fa fa-search"></i> </a>            
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  " data-tag="MIGHTNIGHT">
+          <div class="portfolio-box">
+            <img src="Assets/img/morning-dealss/img-04.jpg" class="img-fluid img-hover"  alt="">
+            <div class="portfolio-box-caption"> 
+                        
+                <a  > <i href="Assets/img/morning-dealss/img-04.jpg" class="fa fa-search"></i> </a>            
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  " data-tag="SUNDAY">
+          <div class="portfolio-box">
+            <img src="Assets/img/morning-dealss/img-05.jpg" class="img-fluid img-hover" alt="">
+            <div class="portfolio-box-caption"> 
+                       
+                <a  ><i href="Assets/img/morning-dealss/img-05.jpg"  class="fa fa-search"></i> </a>            
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  " data-tag="CHICKEN">
+          <div class="portfolio-box">
+            <img src="Assets/img/morning-dealss/img-06.jpg" class="img-fluid img-hover" alt="">
+            <div class="portfolio-box-caption"> 
+                        
+                <a  > <i href="Assets/img/morning-dealss/img-06.jpg" class="fa fa-search"></i></a>            
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  " data-tag="CHICKEN">
+          <div class="portfolio-box">
+            <img src="Assets/img/morning-dealss/img-04.jpg" class="img-fluid img-hover" alt="">
+            <div class="portfolio-box-caption"> 
+                      
+                <a  ><i href="Assets/img/morning-dealss/img-04.jpg" class="fa fa-search"></i></a>            
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6  " data-tag="CHICKEN">
+          <div class="portfolio-box">
+            <img src="Assets/img/morning-dealss/img-05.jpg" width="800" height="533" class="img-fluid" alt="">
+            <div class="portfolio-box-caption"> 
+                <a ><i href="Assets/img/morning-dealss/img-05.jpg"   class="fa fa-search"></i> </a>          
+            </div>
+          </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+</section>
+
+
+
+<!-- ------Events-------- -->
+
+<section id="event">
+  <div class="event-bg">
+    <div class="container">
+      <div class="center">
+        <span class="span-head">Events</span>
+         <h2>DO NOT MISS</h2>
+      </div>
+      <div class="row pt-5">
+        <div class="col-lg-4 col-md-4">
+          <h6>Daily Special Foods That </h6>
+          <p class="pt-3"><span class="span-text"><i class="fa fa-circle-arrow-down"></i>  08 /1/2015 / 8:30 pm - 11:00 pm </span></p>
+          <p class="pb-3"><span class="span-text"><i class="fa fa-location-dot "></i>  Paris France </span></p>
+          <img src="Assets/img1/home/event 1.webp" class="img-fluid" alt="">
+          <p class="pt-3"><span class="span-text">Requrring Events <a href="#"><span>(See all)</span></a></span></p>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h6>Daily Special Foods That </h6>
+          <p class="pt-3"><span class="span-text"><i class="fa fa-circle-arrow-down"></i>  08 /1/2015 / 8:30 pm - 11:00 pm </span></p>
+          <p class="pb-3"><span class="span-text"><i class="fa fa-location-dot "></i>  Paris France </span></p>
+          <img src="Assets/img1/home/event 2.webp" class="img-fluid" alt="">
+          <p class="pt-3"><span class="span-text">Requrring Events <a href="#"><span>(See all)</span></a></span></p>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <h6>Daily Special Foods That </h6>
+          <p class="pt-3"><span class="span-text"><i class="fa fa-circle-arrow-down"></i>  08 /1/2015 / 8:30 pm - 11:00 pm </span></p>
+          <p class="pb-3"><span class="span-text"><i class="fa fa-location-dot "></i>  Paris France </span></p>
+          <img src="Assets/img1/home/event 3.webp" class="img-fluid" alt="">
+          <p class="pt-3"><span class="span-text">Requrring Events <a href="#"><span>(See all)</span></a></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ----------brand-slider------------ -->
+
+<section id="brand-slider">
+  <div class="slider-bg py-5" >
+    <div class="container">
+      <div class="row" >
+        <div class="col-1"></div>
+        <div class="col-10">
+          <div class="slider3 py-5">
+            <div class="center">
+              <div class="">
+              <img src="Assets/img1/home/slide 1.webp" class="img-fluid rounded" alt="">
+            </div>
+              <p class="p-3 text-white">
+                Conceived,Build and Run by Lovers Purveyors of Food Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa labore ab tempora repellendus mollitia qui voluptatibus exercitationem. Inventore facilis, et harum nemo illo possimus tempora sequi optio. Cupiditate, dignissimos recusandae?
+              </p>
+              <p><span>Reena Scot</span></p>
+              <span>Founder </span>
+            </div>
+            <div class="center">
+              <div class="">
+              <img src="Assets/img1/home/slide 2.webp" class="img-fluid rounded" alt="">
+            </div>
+              <p class="p-3 text-white">
+                Conceived,Build and Run by Lovers Purveyors of Food Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa labore ab tempora repellendus mollitia qui voluptatibus exercitationem. Inventore facilis, et harum nemo illo possimus tempora sequi optio. Cupiditate, dignissimos recusandae?
+              </p>
+              <p><span> Reena Scot</span></p>
+              <span>Founder </span>
+            </div>
+            <div class="center">
+              <div class="">
+              <img src="Assets/img1/home/slide 3.webp" class="img-fluid rounded" alt="">
+            </div>
+              <p class="p-3 text-white">
+                Conceived,Build and Run by Lovers Purveyors of Food Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa labore ab tempora repellendus mollitia qui voluptatibus exercitationem. Inventore facilis, et harum nemo illo possimus tempora sequi optio. Cupiditate, dignissimos recusandae?
+              </p>
+              <p><span>Reena Scot</span></p>
+              <span> Founder </span>
+            </div>
+            
+
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <div ><img src="Assets/img/brand-slider/01.png" class="img-fluid" alt=""></div>
+
+        </div>
+        <div class="col-2">
+          <div><img src="Assets/img/brand-slider/02 + active.png" class="img-fluid" alt=""></div>
+
+        </div>
+        <div class="col-2">
+          <div ><img src="Assets/img/brand-slider/03.png" class="img-fluid" alt=""></div>
+
+        </div>
+        <div class="col-2">
+          <div><img src="Assets/img/brand-slider/04.png" class="img-fluid" alt=""></div>
+
+        </div>
+        <div class="col-2">
+          <div ><img src="Assets/img/brand-slider/05.png" class="img-fluid" alt=""></div>
+
+        </div>
+        <div class="col-2">
+          <div ><img src="Assets/img/brand-slider/06.png" class="img-fluid" alt=""></div>
+
+        </div>
+        <div class="">
+          <div class="d-flex">
+          </div>
+        </div>
+        <div class="col-1"></div>
+       
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ------------help Food ---------- -->
+
+<section id="help-food">
+  <div class="help-bg">
+    <div class="container">
+      <div class="center pb-3">
+        <span class="span-head">These help us</span>
+         <h2>ABOUT HEALTH FOOD</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 p-2">
+          <img src="Assets/img1/home/help food.webp" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-4 col-md-4 p-2">
+          <img src="Assets/img1/home/help food2.webp" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-4 col-md-4 pad">
+          <p>34 mintes plan</p>
+          <h3>EVERY COOKING TIME A SPECIAL DAY </h3>
+          <p class="py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, qui! Molestias, adipisci eum? Odio accusantium nisi vero quos porro dolor quis perspiciatis nulla ut quaerat, ea dignissimos, doloremque officia odit?</p>
+          <span><a href="#" class="btn btn-outline-danger py-2">ABOUT US</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- ----------buy one get 2 free ------------- -->
+
+<section id="sunday-deals">
+  <div class="sunday-bg">
+    <div class="">
+      <div class="row ">
+        <div class="col-lg-6 col-md-6">
+          <img src="Assets/img1/home/Sunday.webp" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 col-md-6 pad bg">
+          <div class="center">
+            <span class="span-head">Sunday special Deals</span>
+                      <h2>BUY 1 GET 2 FREE</h2>
+                    </div>
+                    <div class="row ">
+                      <div class="col-lg-6 col-md-6 center">
+                        <div class="pb-2">
+                        <p><span>$22.00</span></p>
+                        <h6>OATMEAL COOKIE</h6>
+                        <P>Hot Chocolate & Whipped</P>
+                      </div>
+                        <div class="pb-2">
+                        <p><span>$22.00</span></p>
+                        <h6>OATMEAL COOKIE</h6>
+                        <P>Hot Chocolate & Whipped</P>
+                      </div>
+                        <div class="pb-2">
+                        <p><span>$22.00</span></p>
+                        <h6>OATMEAL COOKIE</h6>
+                        <P>Hot Chocolate & Whipped</P>
+                      </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 center">
+                        <div class="pb-2">
+                          <p><span>$22.00</span></p>
+                          <h6>OATMEAL COOKIE</h6>
+                          <P>Hot Chocolate & Whipped</P>
+                        </div>
+                          <div class="pb-2">
+                          <p><span>$22.00</span></p>
+                          <h6>OATMEAL COOKIE</h6>
+                          <p>Hot Chocolate & Whipped</p>
+                        </div>
+                          <div class="pb-2">
+                          <p><span>$22.00</span></p>
+                          <h6>OATMEAL COOKIE</h6>
+                          <p>Hot Chocolate & Whipped</p>
+                        </div>
+                      </div>
+                    </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- -------help us -------  -->
+
+<section id="help-us">
+  <div class="helpus-bg">
+    <div class="container">
+      <div class="center">
+        <span class="span-head">These helps us</span>
+            <h2>TOUCH WITH US</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iusto dignissimos, beatae exercitationem repellendus quia ipsam qui officiis, mollitia optio maiores tempora fugiat quisquam! Laborum.</p>
+            <div class="d-flex justify-content-center">
+              <i class="fa-brands fa-facebook-f "></i>
+              <i class="fa-brands fa-google-plus-g icon"></i>
+              <i class="fa fa-basketball icon"></i>
+              <i class="fa-sharp fa-solid fa-face-smile icon"></i>
+              <i class="fa-brands fa-instagram icon"></i>
+            </div>
+            
+        </div>
+
+        <div class="row py-4">
+          <div class="col-lg-10 col-sm-10">
+            <input type="text" value="Enter Your Email" >
+
+          </div>
+          <div class="col-lg-2 col-sm-2">
+            <a href="#" class="btn btn-danger">Subscribe<i class="fa-solid fa-paper-plane px-1"></i></a>
+
+          </div>
+            </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ---------book your table------- -->
+
+<section id="table">
+  <div class="table-bg">
+    <div class="container">
+      <div class="center">
+        <span class="span-head">Book your Table</span>
+            <h2>DO NOT MISS OPPORTUNITY</h2>
+      </div>
+      <div class="row pt-4">
+        <div class="col-lg-6 col-md-6 col-sm-12 pad">
+          <input type="text" value="Name">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 pad">
+          <input type="text" value="Phone">
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col-lg-6 col-md-6 col-sm-12 pad">
+          <input type="email" value="Email">
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pad">
+          <input type="date" value="Date">
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 pad">
+          <input type="time" value="Time">
+        </div>
+      </div>
+      <div class="center pt-5">
+        <a href="#" class="btn btn-danger">SUBMIT</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- -------footer-------- -->
+
+<section id="footer">
+  <div class="footer-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-12 p-2"> 
+          <h6>OPEN HOURS <span>.</span></h6>
+          <div class="hours">
+          <p class="open-hours">Monday   -----------------   Closed</p>
+          <p class="open-hours">Tue Fri   -----------------   10am - 12pm</p>
+          <p class="open-hours">Sat Sun   -----------------   7am - 1am</p>
+          <p class="open-hours">Public Holi Days   ----------   7am - 1pm</p>
+        </div>
+          <a href="#" class="btn btn-danger">VIEW ALL</a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 p-2">
+          <h6>LATEST NEWS <span>.</span></h6>
+          <div class="row latest">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <img src="Assets/img1/footer/Latest news 1.webp" class="img-fluid" alt="No-Image">
+
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 align-self-center p-2 ">
+              <h5>Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+              <p>Dec 12-2015</p>
+
+            </div>
+          </div>
+          <div class="row latest2">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <img src="Assets/img1/footer/Latest news 2.webp" class="img-fluid" alt="No-Image">
+
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 align-self-center p-2">
+              <h5>Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+              <p>Dec 12-2015</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 p-2">
+          <h6>DEAL GALLERY <span>.</span></h6>
+          <div class="img-grid">
+            <img src="Assets/img1/footer/deals gallrey 1.webp" alt="No-Image" class="img-fluid">
+            <img src="Assets/img1/footer/deals gallrey 2.webp" alt="No-Image" class="img-fluid">
+            <img src="Assets/img1/footer/deals gallrey 3.webp" alt="No-Image" class="img-fluid">
+            <img src="Assets/img1/footer/deals gallrey 4.webp" alt="No-Image" class="img-fluid">
+          </div>
+          <a href="#" class="btn btn-danger">VIEW ALL</a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-12 p-2">
+          <h6>CONTACT INFO <span>.</span></h6>
+          <div class="contact-info">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero ducimus dolorem fugit perferendis.</p>
+          </div>
+          <p class="bdr-btm"><span><i class="fa fa-house "></i></span> Uk Street, Green Home City, Londaon.</p>
+          <p class="bdr-btm"><span><i class="fa fa-envelope"></i></span> Info@yourtheme.com</p>
+          <p class="bdr-btm"><span><i class="fa fa-phone"></i></span> +97-1073602: 3107828778</p>
+        </div>
+      </div>
+    </div>
+      </div>
+</section>
+<section id="copyrights">
+  <div class="center p-4">
+    Copyright Use-theme 2015. All Rights Reserved.
+  </div>
+</section>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up-long"></i></button>
+
+  <script src="Assets/bootstrap/bootstrap.bundle.min.js"
+    ></script>
+  <script type="text/javascript" src="Assets/js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="Assets/js/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="Assets/js/slick.min.js"></script>
+  <script type="text/javascript" src="Assets/js/style.js"></script>
+  <!-- <script src="Assets/js/jquery-2.2.4.min.js"></script> -->
+	<script src="Assets/js/common_scripts_min.js"></script>
+	<script src="Assets/js/validate.js"></script>
+	<script src="Assets/js/functions.js"></script>
+  <script src="Assets/js/bootstrap-portfilter.min.js"></script>
+
+</body>
+
+</html>

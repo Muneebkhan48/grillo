@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="Assets/img1/favicon2.ico"/>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- Css -->
+    <link rel="stylesheet" href="Assets/css/style.css" />
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- Add the new slick-theme.css if you want the default styling -->
+
+    <link rel="stylesheet" type="text/css" href="Assets/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="Assets/css/slick-theme.css" />
+
+    <link href="Assets/css/responsive.css" rel="stylesheet">
+	<link href="Assets/css/grillo-popup.min.css" rel="stylesheet">
+
+    <title>Gallrey2</title>
+</head>
+
+<body onload="myFunction">
+<!-- ------preloader----- -->
+<div id="loader-wraper">
+  <div id="loader">
+    <div class="d-flex justify-content-center align-self-center">
+      <div class="spinner-border text-danger p-2" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+</div>
+</div>
+    <!-- ------navbar------- -->
+
+    <section id="navbar-wraper">
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-6 col-sm-6 d-flex alignment display">
+                        <div class="location">
+                            <a href="#">
+                                <i class="fa fa-location-dot"></i>
+                            </a>
+                            &nbsp;
+                            <p>732/21 second street. king Street, United Kingdom</p>
+                        </div>
+                        <div class="telephone mx-4">
+                            <a href="#">
+                                <i class="fa fa-phone"></i>
+                            </a>
+                            &nbsp;
+                            <p>+923461919917</p>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-1 col-md-1"></div> -->
+                    <div class="col-lg-5 col-md-6 col-sm-6 d-flex justify-content-center alignment  ">
+                        <div class="links  ">
+                            <ul class="socialicon">
+                                <li class="icon pe-2">
+                                    <a href="#" class="ico-facebook"><i class="fab fa-facebook-f iconz"></i></a>
+                                </li>
+                                <li class="icon pe-2">
+                                    <a href="#" class="ico-twitter"><i class="fab fa-twitter iconz"></i></a>
+                                </li>
+                                <li class="icon pe-2">
+                                    <a href="#" class="ico-instagram"><i class="fab fa-instagram iconz"></i></a>
+                                </li>
+                                <li class="icon pe-2">
+                                    <a href="#" class="ico-youtube"><i class="fab fa-youtube iconz"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search ">
+                          <a href="#" onclick="search" id="srch" data-bs-toggle="modal" data-bs-target="#exampleModal1"><i class="fa-solid fa-magnifying-glass pr-1"></i> &nbsp; Search</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog1">
+    <div class="modal-content modal-content1">
+      <div class="modal-body modal-body1 ">
+        <button type="button" class="btn-close btn-close1" data-bs-dismiss="modal" aria-label="Close"></button>
+        <input type="text" id="grow" >
+      </div>
+      
+    </div>
+  </div>
+</div>
+        <div id="menubar">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"><img src="Assets/img1/logo/logo.png" class="img-fluid" alt=""></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars icon1"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Home1.html">HOME.</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  PAGES.
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="Home1.html">HOME 1</a></li>
+                                  <li>
+                                    <a class="dropdown-item" href="Home2.html">HOME 2</a>
+                                  </li>
+                                  
+                                  <li>
+                                    <a class="dropdown-item" href="Home3.html">HOME 3</a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="About us.html">About Us.</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="Contact us.html">Contact Us.</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                  Gallries.
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="Gallrey1.html">Gallrey 1</a></li>
+                                  <li>
+                                    <a class="dropdown-item" href="Gallrey2.html">Gallrey 2</a>
+                                  </li>
+                                  
+                                  <li>
+                                    <a class="dropdown-item" href="Gallrey3.html">Gallrey 3</a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link " href="Single_blog.html">BLOG.</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link " href="single-recipice.html">SHOP.</a>
+                              </li>
+                            </ul>
+                            <div class="d-flex">
+                              <a href="Reservation.html" class="btn btn-lg btn1 ">RESERVATION</a>
+                              <a href="" class=""><i class="fa fa-cart-shopping icon2"><span class="position-absolute translate-middle badge rounded-pill bg-danger">
+                                2
+                              </span></i>
+                              </a>
+                              <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-bars icon3"></i></a>
+                            </div>
+                          </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+         <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          
+              <div class="popup-bg p-5">
+                  <div class="container">
+                      <div class="center">
+                      <span class="span-head">Discover</span>
+                      <h2>ODDER YOUR DEAL</h2>
+                  </div>
+                      <div class="row">
+                          <div class="col-lg-5 col-md-5">
+                              <img src="Assets/img1/popup/269 × 268 px.webp" class="img-fluid" alt="">
+                          </div>
+                          <div class="col-lg-7 col-md-7">
+                              <p>34 mintes plan</p>
+                              <h5><b>EVERY COOKING TIME A SPECIAL DAY</b> </h5>
+                              <h6><b>Price $80</b></h6>
+                              <p class="py-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias, qui! Molestias, adipisci eum? Odio accusantium nisi vero quos porro dolor quis perspiciatis nulla ut quaerat, ea dignissimos, doloremque officia odit?</p>
+                              
+                          </div>
+                      </div>
+                      <div class="row">
+                          <h2>CALL FOR ODDER</h2>
+                          <div class="d-flex">
+                              <i class="fa fa-brands fa-whatsapp  "></i>
+                              <p class="align-self-center">+923410450040</p>
+                          </div>
+                          <div class="d-flex py-3">
+                              <i class="fa fa-solid fa-phone"></i>
+                              <p class="align-self-center">+923410450040</p>
+                          </div>
+                          <div class="d-flex">
+                              <i class="fa fa-brands fa-skype"></i>
+                              <p class="align-self-center">+923410450040</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          
+
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- ------- Contact us caption--------- -->
+
+    <section id="contact-us">
+        <div class="contact-bg">
+            <div class="container">
+                <div class="center">
+                    <h2 class="text-white">GALLERY PAGE</h2>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class=" ">Home.</a>
+                        <a href="#" class=" ">Page.</a>
+                        <a href="#" class=" ">All Blog.</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------footer-------- -->
+
+    <section id="gallrey2">
+        <div class="gallrey-bg">
+            <div class="container">
+                <div class="row no-gutters flex-gap magnific-gallery">
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="portfolio-box" id="a">
+                        <img src="Assets/img1/gallrey 2/1.webp" class="img-fluid img-hover" alt="">
+                        <div class="portfolio-box-caption"> 
+                          <i href="Assets/img1/gallrey 2/1.webp" class="fa fa-search"></i>           
+                               
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="portfolio-box">
+                        <img src="Assets/img1/gallrey 2/2.webp" class="img-fluid img-hover" alt="">
+                        <div class="portfolio-box-caption"> 
+                          <i href="Assets/img1/gallrey 2/2.webp" class="fa fa-search"></i>           
+                                  
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="portfolio-box">
+                        <img src="Assets/img1/gallrey 2/3.webp" class="img-fluid img-hover" alt="">
+                        <div class="portfolio-box-caption"> 
+                          <i href="Assets/img1/gallrey 2/3.webp" class="fa fa-search"></i>           
+                               
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="portfolio-box">
+                        <img src="Assets/img1/gallrey 2/4.webp" class="img-fluid img-hover" alt="">
+                        <div class="portfolio-box-caption"> 
+                          <i href="Assets/img1/gallrey 2/4.webp" class="fa fa-search"></i>           
+                               
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="portfolio-box">
+                        <img src="Assets/img1/gallrey 2/5.webp" class="img-fluid img-hover" alt="">
+                        <div class="portfolio-box-caption"> 
+                          <i href="Assets/img1/gallrey 2/5.webp" class="fa fa-search"></i>           
+                                  
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="portfolio-box">
+                        <img src="Assets/img1/gallrey 2/6.webp" class="img-fluid img-hover" alt="">
+                        <div class="portfolio-box-caption"> 
+                          <i href="Assets/img1/gallrey 2/6.webp" class="fa fa-search"></i>           
+                                  
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="portfolio-box">
+                        <img src="Assets/img1/gallrey 2/7.webp" class="img-fluid img-hover" alt="">
+                        <div class="portfolio-box-caption"> 
+                          <i href="Assets/img1/gallrey 2/7.webp" class="fa fa-search"></i>           
+                                  
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="portfolio-box">
+                        <img src="Assets/img1/gallrey 2/8.webp" class="img-fluid img-hover" alt="">
+                        <div class="portfolio-box-caption"> 
+                          <i href="Assets/img1/gallrey 2/8.webp" class="fa fa-search"></i>           
+                                  
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="portfolio-box">
+                        <img src="Assets/img1/gallrey 2/9.webp" class="img-fluid img-hover" alt="">
+                        <div class="portfolio-box-caption"> 
+                          <i href="Assets/img1/gallrey 2/9.webp" class="fa fa-search"></i>           
+                                  
+                        </div>
+                      </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <!-- -------footer-------- -->
+
+    <section id="footer">
+      <div class="footer-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12 p-2"> 
+              <h6>OPEN HOURS <span>.</span></h6>
+              <div class="hours">
+              <p class="open-hours">Monday   -----------------   Closed</p>
+              <p class="open-hours">Tue Fri   -----------------   10am - 12pm</p>
+              <p class="open-hours">Sat Sun   -----------------   7am - 1am</p>
+              <p class="open-hours">Public Holi Days   ----------   7am - 1pm</p>
+            </div>
+              <a href="#" class="btn btn-danger">VIEW ALL</a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 p-2">
+              <h6>LATEST NEWS <span>.</span></h6>
+              <div class="row latest">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <img src="Assets/img1/footer/Latest news 1.webp" class="img-fluid" alt="No-Image">
+    
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 align-self-center p-2 ">
+                  <h5>Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                  <p>Dec 12-2015</p>
+    
+                </div>
+              </div>
+              <div class="row latest2">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <img src="Assets/img1/footer/Latest news 2.webp" class="img-fluid" alt="No-Image">
+    
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 align-self-center p-2">
+                  <h5>Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                  <p>Dec 12-2015</p>
+    
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 p-2">
+              <h6>DEAL GALLERY <span>.</span></h6>
+              <div class="img-grid">
+                <img src="Assets/img1/footer/deals gallrey 1.webp" alt="No-Image" class="img-fluid">
+                <img src="Assets/img1/footer/deals gallrey 2.webp" alt="No-Image" class="img-fluid">
+                <img src="Assets/img1/footer/deals gallrey 3.webp" alt="No-Image" class="img-fluid">
+                <img src="Assets/img1/footer/deals gallrey 4.webp" alt="No-Image" class="img-fluid">
+              </div>
+              <a href="#" class="btn btn-danger">VIEW ALL</a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 p-2">
+              <h6>CONTACT INFO <span>.</span></h6>
+              <div class="contact-info">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero ducimus dolorem fugit perferendis.</p>
+              </div>
+              <p class="bdr-btm"><span><i class="fa fa-house "></i></span> Uk Street, Green Home City, Londaon.</p>
+              <p class="bdr-btm"><span><i class="fa fa-envelope"></i></span> Info@yourtheme.com</p>
+              <p class="bdr-btm"><span><i class="fa fa-phone"></i></span> +97-1073602: 3107828778</p>
+            </div>
+          </div>
+        </div>
+          </div>
+    </section>
+    <section id="copyrights">
+      <div class="center p-4">
+        Copyright Use-theme 2015. All Rights Reserved.
+      </div>
+    </section>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up-long"></i></button>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="Assets/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="Assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="Assets/js/slick.min.js"></script>
+    <script type="text/javascript" src="Assets/js/style.js"></script>
+
+    <script src="Assets/js/common_scripts_min.js"></script>
+    <script src="Assets/js/validate.js"></script>
+    <script src="Assets/js/functions.js"></script>
+</body>
+
+</html>
